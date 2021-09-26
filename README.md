@@ -45,6 +45,7 @@ git log
 ```
 Often with Git, you’ll need to refer back to an earlier version of a project. Commits are stored chronologically in the repository and can be viewed with git log
 ## 2. How to Backtrack in Git
+When working on a Git project, sometimes we make changes that we want to get rid of. Git offers a few eraser-like features that allow us to undo mistakes during project creation.
 
 ## 3. Git Branching
 ## 4. Git Teamwork
