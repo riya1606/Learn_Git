@@ -79,7 +79,44 @@ You just need to specify first 7 characters of the SHA of a previous commit.
 For Example:
 ```
 git reset 5d69206
-
 ```
 ## 3. Git Branching
+Up to this point, you’ve worked in a single Git branch called master. Git allows us to create branches to experiment with versions of a project. Imagine you want to create version of a story with a happy ending. You can create a new branch and make the happy ending changes to that branch only. It will have no effect on the master branch until you’re ready to merge the happy ending to the master branch.
+Once you switch branches, you will now be able to make commits on the branch that have no impact on master.
+### A. Current Branch
+To check which branch you are currently on.
+```
+git branch
+```
+In the output, the * (asterisk) is showing you what branch you’re on.
+### B. Branching Overview
+![Branching Github](https://user-images.githubusercontent.com/62128029/134799097-9638ea66-9c8f-4748-88c0-490d1ef419b4.png)
+To create a new branch:
+```
+git branch new_branch
+```
+### C. Git Checkout
+You can switch to the new branch with:
+```
+git checkout branch_name
+```
+### D. Commit on a New Branch
+To add files to the staging area:
+```
+git add filename
+```
+To commit
+```
+git commit -m "Commit message"
+```
+### E. Git Merge
+The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
+```
+git merge branch_name
+```
+To switch branches: A quick way of switching branch on Git is to use the “git checkout” command and specify the name of the branch you want to switch to.
+```
+git checkout master
+```
+
 ## 4. Git Teamwork
