@@ -46,6 +46,40 @@ git log
 Often with Git, you’ll need to refer back to an earlier version of a project. Commits are stored chronologically in the repository and can be viewed with git log
 ## 2. How to Backtrack in Git
 When working on a Git project, sometimes we make changes that we want to get rid of. Git offers a few eraser-like features that allow us to undo mistakes during project creation.
+### A. Head Commit
+In Git, the commit you are currently on is known as the HEAD commit. In many cases, the most recently made commit is the HEAD commit.
+```
+git show HEAD
+```
+The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
 
+### B. Git Checkout
+```
+git checkout HEAD filename
+```
+The command will restore the file in your working directory to look exactly as it did when you last made a commit.
+
+### C. More Git Add
+In Git, it’s common to change many files, add those files to the staging area, and commit them to a repository in a single commit.
+```
+git add file_name1 filename_2
+```
+This way you can add multiple files to the staging area.
+
+### D. Git Reset
+This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area.
+```
+git reset HEAD filename
+```
+To hard reset files to HEAD on Git, use the “git reset” command with the “–hard” option and specify the HEAD. The purpose of the “git reset” command is to move the current HEAD to the commit specified.
+```
+git reset commit_SHA
+```
+You just need to specify first 7 characters of the SHA of a previous commit.
+For Example:
+```
+git reset 5d69206
+
+```
 ## 3. Git Branching
 ## 4. Git Teamwork
