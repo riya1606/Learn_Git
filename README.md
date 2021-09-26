@@ -118,5 +118,11 @@ To switch branches: A quick way of switching branch on Git is to use the “git 
 ```
 git checkout master
 ```
+### F. Delete Branch
+In Git, branches are usually a means to an end. You create them to work on a new project feature, but the end goal is to merge that feature into the master branch. After the branch has been integrated into master, it has served its purpose and can be deleted.
+The following command will help to do so:
+```
+git branch -d branch_name
+```
 
 ## 4. Git Teamwork
