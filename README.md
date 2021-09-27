@@ -126,3 +126,19 @@ git branch -d branch_name
 ```
 
 ## 4. Git Teamwork
+Git also offers a suite of collaboration tools to make working with others on a project easier.
+ A remote is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations. Collaborators work on the project independently, and merge changes together when they are ready to do so.
+ ### A. Git Clone
+git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository. 
+ ```
+ git clone remote_location clone_name
+ ```
+ * remote_location tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
+ * clone_name is the name you give to the directory in which Git will clone the repository.
+ 
+ ### B. Git Remote -v
+ ### C. Git Fetch
+ ### D. Git Merge
+ ### E. Git Workflow
+ ### F. Git Push
+ 
