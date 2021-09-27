@@ -144,8 +144,28 @@ git remote -v
 ```
  ### C. Git Fetch
 The git fetch is a primary command used to download contents from a remote repository. git fetch is used in conjunction with git remote , git branch , git checkout , and git reset to update a local repository to the state of a remote. The git fetch command is a critical piece of collaborative git work flows.
-
+An easy way to see if changes have been made to the remote and bring the changes down to your local copy is with 
+```
+git fetch
+```
+This command will not merge changes from the remote into your local repository. It brings those changes onto what’s called a remote branch.
  ### D. Git Merge
- ### E. Git Workflow
- ### F. Git Push
+ To merge branches
+ ```
+ git merge origin/master
+ ```
  
+ ### E. Git Workflow
+ Now that you’ve merged origin/master into your local master branch, you’re ready to contribute some work of your own. The workflow for Git collaborations typically follows this order:
+
+* Fetch and merge changes from the remote
+* Create a branch to work on a new project feature
+* Develop the feature on your branch and commit your work
+* Fetch and merge from the remote again (in case new commits were made while you were working)
+* Push your branch up to the remote for review
+
+ ### F. Git Push
+The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo.
+```
+git push origin your_branch_name
+```
