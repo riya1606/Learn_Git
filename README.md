@@ -133,11 +133,18 @@ git clone is a Git command line utility which is used to target an existing repo
  ```
  git clone remote_location clone_name
  ```
- * remote_location tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
+ * remote_location tells Git where to go to find the remote. 
  * clone_name is the name you give to the directory in which Git will clone the repository.
  
  ### B. Git Remote -v
+The git remote command is essentially an interface for managing a list of remote entries that are stored in the repository's ./. git/config file.
+You can see a list of a Git project’s remotes with the command:
+```
+git remote -v
+```
  ### C. Git Fetch
+The git fetch is a primary command used to download contents from a remote repository. git fetch is used in conjunction with git remote , git branch , git checkout , and git reset to update a local repository to the state of a remote. The git fetch command is a critical piece of collaborative git work flows.
+
  ### D. Git Merge
  ### E. Git Workflow
  ### F. Git Push
